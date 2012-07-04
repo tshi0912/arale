@@ -7,7 +7,7 @@
     m.define = f(2);
     u = o.createElement('script');
     u.id = d + 'node';
-    u.src = '../../../dist/seajs/1.1.8/sea.js';
+    u.src = '../../../dist/seajs/1.1.9/sea.js';
     l = o.getElementsByTagName('head')[0];
     l.insertBefore(u, l.firstChild);
 })(window, document, 'seajs');
@@ -20,9 +20,8 @@ seajs.config({
 
         // 外来模块
         '$': 'jquery/1.7.2/jquery',
-        //'$': 'zepto/1.0.0/zepto',
         'jquery': 'jquery/1.7.2/jquery',
-        'zepto': 'zepto/1.0.0/zepto',
+        'zepto': 'zepto/0.9.0/zepto',
         'underscore': 'underscore/1.3.3/underscore',
         'json': 'json/1.0.2/json',
         'handlebars': 'handlebars/1.0.0/handlebars',
@@ -38,17 +37,17 @@ seajs.config({
         /* seajs 1.2 尚未开始 */
         'events': 'events/0.9.1/events',                     // 100%
         'class': 'class/0.9.2/class',                        // 100%
-        'base': 'base/0.9.15/base',                          // 95%
-        'widget': 'widget/0.9.15/widget',                    // 95%
-        'templatable': 'widget/0.9.15/templatable',          // 95%
-        'daparser': 'widget/0.9.15/daparser',                // 95%
+        'base': 'base/0.9.16/base',                          // 95%
+        'widget': 'widget/0.9.16/widget',                    // 95%
+        'templatable': 'widget/0.9.16/templatable',          // 95%
+        'daparser': 'widget/0.9.16/daparser',                // 95%
 
 
         // Utilities
         'cookie': 'cookie/1.0.2/cookie',                     // 100%
-        'easing': 'easing/0.9.2/easing',                     // 100%
-        'iframe-shim': 'iframe-shim/0.9.1/iframe-shim',      // 95%
-        'position': 'position/0.9.1/position',               // 95%
+        'easing': 'easing/0.9.3/easing',                     // 100%
+        'iframe-shim': 'iframe-shim/0.9.2/iframe-shim',      // 95%
+        'position': 'position/0.9.2/position',               // 95%
 
         'validator-core': 'validator/0.8.1/core-debug.js',         // 60%
         'validator': 'validator/0.8.1/validator-debug.js',         // 60%
@@ -56,11 +55,11 @@ seajs.config({
 
 
         // Widgets
-        'overlay': 'overlay/0.9.6/overlay',                  // 95%
-        'mask': 'overlay/0.9.6/mask',                        // 95%
-        'baseDialog': 'dialog/0.9.0/baseDialog',             // 70%
-        'animDialog': 'dialog/0.9.0/animDialog',             // 70%
-        'confirmBox': 'dialog/0.9.0/confirmBox',             // 70%
+        'overlay': 'overlay/0.9.7/overlay',                  // 95%
+        'mask': 'overlay/0.9.7/mask',                        // 95%
+        'base-dialog': 'dialog/0.9.0/base-dialog',             // 70%
+        'anim-dialog': 'dialog/0.9.0/anim-dialog',             // 70%
+        'confirm-box': 'dialog/0.9.0/confirm-box',             // 70%
 
         'triggerable': 'triggerable/0.9.3/triggerable',      // 95%
         'dropdown': 'triggerable/0.9.3/dropdown',            // 95%
