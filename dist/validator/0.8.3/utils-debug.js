@@ -1,6 +1,6 @@
-define(function(require, exports, module) {
-    var $ = require('$'),
-        Rule = require('./rule');
+define("#validator/0.8.3/utils-debug", ["#jquery/1.7.2/jquery-debug", "#validator/0.8.3/rule-debug", "#widget/0.9.16/widget-debug", "#base/0.9.16/base-debug", "#class/0.9.2/class-debug", "#events/0.9.1/events-debug", "#base/0.9.16/aspect-debug", "#base/0.9.16/attribute-debug", "#widget/0.9.16/daparser-debug", "#widget/0.9.16/auto-render-debug", "#validator/0.8.3/async-debug"], function(require, exports, module) {
+    var $ = require("#jquery/1.7.2/jquery-debug"),
+        Rule = require("#validator/0.8.3/rule-debug");
 
     var u_count = 0;
     function unique() {
@@ -78,7 +78,7 @@ define(function(require, exports, module) {
 
         //parse type attribute
         var type = field.attr('type');
-        if (type && type != 'submit' && type != 'cancel' && type != 'checkbox' && type != 'radio' && type != 'select' && type != 'select-one' && type != 'file' && type != 'hidden') {
+        if (type && type != 'submit' && type != 'cancel' && type != 'checkbox' && type != 'radio' && type != 'select' && type != 'select-one' && type != 'file') {
 
             if (!Rule.getRule(type)) {
                 throw new Error('Form field with type "' + type + '" not supported!');
