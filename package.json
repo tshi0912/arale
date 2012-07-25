@@ -1,8 +1,9 @@
 {
     "name": "arale",
     "version": "1.0",
-    "type": "parent",
-    "alias": {
+    "root": "#",
+    "sources": ["http://arale.alipay.im:8000"],
+    "dependencies": {
         "$": "jquery/1.7.2/jquery",
         "jquery": "jquery/1.7.2/jquery",
         "zepto": "zepto/0.9.0/zepto",
